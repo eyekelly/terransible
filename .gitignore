@@ -1,0 +1,12 @@
+~/.ssh/*
+*.ssh/*
+*.tfstate*
+*.tfstate.backup*
+*.pem
+hosts
+~/.aws*
+*credentials*
+~/.ansible*
+.bash*
+.zsh*
+.vim*

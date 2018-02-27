@@ -1,0 +1,16 @@
+---
+- hosts: all
+  gather_facts: False
+  remote_user: centos
+  become: yes
+  become_user: root
+  become_method: sudo
+
+  tasks: 
+    - name: install python 2
+      raw: test -e /usr/bin/python || (yum -y update && yum -y install python)
+
+    - name: setup authorised keys
+      authorized_key: user=centos
+                      exclusive=no
+                      key="{{ lookup('file', '~/.ssh/aws_terraform.pub') }}"
