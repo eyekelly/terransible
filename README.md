@@ -12,7 +12,7 @@ You must have ansible and terraform in your PATH environment variable to be able
 You'll need to have access to your AWS account using your credentials and have a private (a .pem file) key setup
 
 ### First
-Run terraform to set up your environment in aws. 
+Run terraform to set up your environment in aws from the terraform/module/instance folder. 
 
 ```
  terraform init
@@ -22,5 +22,8 @@ Run terraform to set up your environment in aws.
  
 ### Second
 
-
+From the ansible/wordpress-playbook/ folder
+- set hosts file to the ip or your instance
+- change the name of the key in the playbook
+- run ansible-playbook playbook.yml -i hosts
  
