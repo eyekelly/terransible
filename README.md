@@ -11,3 +11,13 @@ You must have ansible and terraform in your PATH environment variable to be able
 #### Keys
 You'll need to have access to your AWS account using your credentials and have a private (a .pem file) key setup
 
+### First
+Run terraform to set up your environment in aws. 
+`terraform init`
+`terraform plan`
+`terraform apply`
+   
+### Second
+
+
+ 
