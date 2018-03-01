@@ -13,12 +13,13 @@ You'll need to have access to your AWS account using your credentials and have a
 
 ### First
 Run terraform to set up your environment in aws. 
-`terraform init
 
+```
+ terraform init
  terraform plan
+ terraform apply
+``` 
  
- terraform apply`
-   
 ### Second
 
 
