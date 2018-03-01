@@ -1,5 +1,5 @@
 variable "name" {
-default = "single_instance"
+default = "webserver"
 }
 
 variable "region" {
@@ -11,29 +11,25 @@ default = "t2.micro"
 }
 
 variable "keypair" {
-default = "terraform_ansible"
+default = "ikelly_homeKey"
 }
 
 variable "vpc_security_group_ids" {
-default = "basic-access-sg"
+default = "basic-access"
 }
 
-#get the latest centos
-data "aws_ami" "centos" {
-  most_recent = true
+#get the latest image
+data "aws_ami" "debian" {
+    most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["CentOS Linux 7 x86_64 HVM EBS *"]
-  }
+    filter {
+      name   = "name"
+      values = ["debian-stretch-hvm-x86_64-gp2-*"]
+    }
 
-  filter {
-    name   = "architecture"
-    values = ["x86_64"]
-  }
+    filter {
+      name   = "virtualization-type"
+      values = ["hvm"]
 
-  filter {
-    name   = "root-device-type"
-    values = ["ebs"]
   }
 }

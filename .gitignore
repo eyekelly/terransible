@@ -11,3 +11,4 @@ hosts
 .bash*
 .zsh*
 .vim*
+.DS_Store
