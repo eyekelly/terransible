@@ -10,7 +10,7 @@
     - name: install python 2
       raw: test -e /usr/bin/python || (apt-get -y update && apt-get -y install python)
 
-    - name: setup authorised keys
-      authorized_key: user=admin
-                      exclusive=no
-                      key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+#    - name: setup authorised keys
+#      authorized_key: user=admin
+#                      exclusive=no
+#                      key="{{ lookup('file', '~/.ssh/ud_devops_EU') }}"

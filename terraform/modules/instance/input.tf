@@ -11,11 +11,11 @@ default = "t2.micro"
 }
 
 variable "keypair" {
-default = "ikelly_homeKey"
+default = "ud_devops_EU"
 }
 
 variable "vpc_security_group_ids" {
-default = "basic-access"
+default = "basic-access-sg"
 }
 
 #get the latest image

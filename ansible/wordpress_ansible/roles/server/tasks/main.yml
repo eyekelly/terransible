@@ -5,6 +5,12 @@
   apt: update_cache=yes cache_valid_time=3600
   sudo: yes
 
+- name: stop apache
+  systemd: name=apache2 state=stopped
+  enabled: no
+
+
+
 - name: Install required software
   apt: name={{ item }} state=present
   sudo: yes
