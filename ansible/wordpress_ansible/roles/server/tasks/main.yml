@@ -3,21 +3,28 @@
 
 - name: Update apt cache
   apt: update_cache=yes cache_valid_time=3600
-  sudo: yes
+  upgrade: dist
 
-- name: stop apache
-  systemd: name=apache2 state=stopped
-  enabled: no
-
-
+# - name: stop apache
+#   systemd:
+#     name: apache2
+#     state: stopped
 
 - name: Install required software
-  apt: name={{ item }} state=present
-  sudo: yes
+  apt: name={{ item }} state=latest
   with_items:
     - nginx
     - mysql-server
+    - python-mysqldb
+
+- name: install PHP apps
+  apt: name{{ item }} state=latest
+  with_items:
     - php-mysql
     - php
     - php-mcrypt
-    - python-mysqldb
+    - php-fpm
+
+- file:
+   path: /var/www/html/index.html
+   state: absent
