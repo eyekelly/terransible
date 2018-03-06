@@ -12,4 +12,4 @@ hosts
 .zsh*
 .vim*
 .DS_Store
-.retry
+*.retry
