@@ -12,7 +12,7 @@ You must have ansible and terraform in your PATH environment variable to be able
 You'll need to have access to your AWS account using your credentials and have a private (a .pem file) key setup
 
 ### First
-There are a number of assumptions, and you must add your key including the path to it to the start.sh script
+There are a number of assumptions, and you must add your key including the path [this line](https://github.com/eyekelly/terransible/blob/07eb26eeb28e9ee2070d078902931d48376eb60f/start.sh#L20 "edit ansible playbook command in start.sh")
 
 Run start.sh
  
