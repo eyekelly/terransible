@@ -21,6 +21,9 @@ There are a number of assumptions, and you must add your key including the path 
  - you've got a security group called basic-access-sg in your VPC (change to your own preferred security group name)
  - you're running this script directly in the "Terransible" directory
 
-Run start.sh
+Run 
 
+```
+start.sh
+```
  
