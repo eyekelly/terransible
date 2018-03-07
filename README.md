@@ -17,9 +17,9 @@ There are a number of assumptions, and you must add your key including the path 
  - terraform and ansible installed
  - your PATH variable set up with both applications
  - your keys to access AWS set up
- - you've edited the terraform file to apply your own key
- - you've got a security group called basic-access-sg in your VPC
- - you're running this script from directly in the "Terransible" directory
+ - you've edited the terraform input.tf file with your own AWS Key name
+ - you've got a security group called basic-access-sg in your VPC (change to your own preferred security group name)
+ - you're running this script directly in the "Terransible" directory
 
 Run start.sh
 
