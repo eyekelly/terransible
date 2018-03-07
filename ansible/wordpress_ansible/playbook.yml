@@ -24,9 +24,6 @@
 
 
   tasks:
-    - name: Install nginx.
-      package: name=nginx state=latest
-
     - name: Create website directory
       file: path="/var/www/{{ site_name }}" state=directory mode=0755
 
