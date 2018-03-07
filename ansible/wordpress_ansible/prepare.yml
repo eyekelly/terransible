@@ -1,6 +1,7 @@
 ---
 - hosts: all
   gather_facts: False
+  host_key_checking: False
   remote_user: admin
   become: yes
   become_user: root
