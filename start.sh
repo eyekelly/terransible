@@ -17,4 +17,5 @@ $host
 [wordpress]
 $host
 EOF
+sleep 10
 (cd ansible/wordpress_ansible ; ansible-playbook playbook.yml -i hosts --private-key ~/.ssh/ud_devops_EU.pem)

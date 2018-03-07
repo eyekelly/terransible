@@ -3,12 +3,13 @@
 #   (make sure to add the IPs of machines you want to manage to /etc/ansible/hosts first)
 
 - hosts: wordpress
-
   roles:
     - server
     - php
     - mysql
     - wordpress
+
+
 
   remote_user: admin
   become: yes
