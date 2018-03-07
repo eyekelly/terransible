@@ -23,3 +23,9 @@
 - file:
    path: /var/www/html/index.html
    state: absent
+
+- name: Create website directory
+  file: path="/var/www/{{ site_name }}" state=directory mode=0755
+
+- name: create fast cgi cache directory
+  file: path="/usr/share/nginx/cache/fcgi" state=directory mode=0755

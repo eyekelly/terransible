@@ -23,13 +23,6 @@
     site_url: "www.iksound.co.uk"
 
 
-  tasks:
-    - name: Create website directory
-      file: path="/var/www/{{ site_name }}" state=directory mode=0755
-
-    - name: create fast cgi cache directory
-      file: path="/usr/share/nginx/cache/fcgi" state=directory mode=0755
-
 
     #
     # - name: Create nginx vhost config file
@@ -50,14 +43,3 @@
     #   notify:
     #   - restart nginx
     #   - enable nginx
-
-  # handlers:
-  #   - name: restart nginx
-  #     service:
-  #       name: nginx
-  #       state: restarted
-
-    - name: enable nginx
-      service:
-        name: nginx
-        enabled: yes
