@@ -15,11 +15,5 @@ You'll need to have access to your AWS account using your credentials and have a
 There are a number of assumptions, and you must add your key including the path [this line](https://github.com/eyekelly/terransible/blob/07eb26eeb28e9ee2070d078902931d48376eb60f/start.sh#L20 "edit ansible playbook command in start.sh")
 
 Run start.sh
- 
-### Second
 
-From the ansible/wordpress-playbook/ folder
-- set hosts file to the ip or your instance
-- change the name of the key in the playbook
-- run ansible-playbook playbook.yml -i hosts
  
