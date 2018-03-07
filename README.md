@@ -24,6 +24,6 @@ There are a number of assumptions, and you must add your key including the path 
 Run 
 
 ```
-start.sh
+./start.sh
 ```
  
