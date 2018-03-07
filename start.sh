@@ -7,9 +7,9 @@
 # you've got a security group called basic-access-sg in your VPC
 # you're running this script from directly in the "Terransible" directory
 
-#(cd terraform/modules/instance/ ; terraform init )
-#(cd terraform/modules/instance/ ; terraform apply --auto-approve)
-#(cd terraform/modules/instance/ ; host='terraform output public_ip') 
+(cd terraform/modules/instance/ ; terraform init )
+(cd terraform/modules/instance/ ; terraform apply --auto-approve)
+(cd terraform/modules/instance/ ; host='terraform output public_ip') 
 host=$(cd terraform/modules/instance/ ; terraform output public_ip)
 cat <<EOF > ansible/wordpress_ansible/hosts
 [allservers]
