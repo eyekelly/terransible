@@ -11,11 +11,11 @@ default = "t2.micro"
 }
 
 variable "keypair" {
-default = "ud_devops_EU"
+default = "aws-home"
 }
 
 variable "vpc_security_group_ids" {
-default = "basic-access-sg"
+default = "basic-access"
 }
 
 #get the latest image
